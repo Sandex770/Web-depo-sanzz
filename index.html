@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deposit Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Deposit Panel Pterodactyl</h2>
+    <label for="nominal">Masukkan Nominal Deposit:</label>
+    <input type="number" id="nominal" placeholder="Contoh: 1000" />
+
+    <button onclick="buatPembayaran()">Lanjut Bayar</button>
+
+    <div id="infoPembayaran" class="hidden">
+      <img id="qrImage" src="" alt="QRIS" />
+      <pre id="detailPembayaran"></pre>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
